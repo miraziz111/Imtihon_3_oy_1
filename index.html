@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body >
+  
+  <button onclick="modeFunc()" class="float-right border-[4px] px-3 py-2 shadow-md">Mode</button>
+  
+  <div class="container mx-auto max-w-[500px] py-8  bg-gradient-to-r from-purple-500 to-pink-500 mt-16 rounded-lg mb-12">
+    <form class="form text-center mb-12 px-12">
+      <p class="text-5xl text-green-300 tracking-widest mb-7">Products</p>
+      <input type="text" name="keyImp" class="form__img block border shadow-md text-xl rounded-2xl px-3 mb-5  py-2 mx-auto text-slate-600" placeholder="Rasm linkini kiriting" required >
+      <input type="text" name="keyTitle" class="form__title block border shadow-md text-xl rounded-2xl px-3 mb-5  py-2 mx-auto text-slate-600" placeholder="Nomini kiriting" maxlength="8" minlength="3" required>
+      <input type="text" name="keySub" class="form__desk block border shadow-md text-xl rounded-2xl px-3 mb-5 py-2 mx-auto text-slate-600" placeholder="Ma'lumot kiriting"  maxlength="18" minlength="3" required>
+      <input type="number" name="keyNum"  class="form__prise block border shadow-md text-xl rounded-2xl px-3 mb-5 py-2 mx-auto text-slate-600" placeholder="Narxini kiriting" required>
+      <label for="" class="block mb-5 text-xl text-gray-700">
+        Skidprice :
+        <input type="radio" value="yes, S k i d k a !" name="skidName" class="skid w-5 h-4" required>
+        <input type="radio" value="no, S k i d k a !" name="skidName" class="noSkid w-5 h-4" required>
+      </label>
+      <select name="products" id="productSel" class="block mx-auto border shadow-md text-xl rounded-2xl px-3 mb-5 py-2 text-slate-600">
+        <option value="Mahsulotlar"> Mahsulotlar</option>
+        <option value="oziq-ovqat"> oziq-ovqat</option>
+        <option value="kiyim-kechak">kiyim-kechak</option>
+        <option value="maishiy-texnika"> maishiy-texnika</option>
+        <option value="xos-tovarlar"> xos-tovarlar</option>
+      </select>
+      
+      
+      <button type="submit" class="btn py-1 px-7 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 mx-auto" >Save</button>
+      
+    </form>
+  </div>
+  
+  <div class="container mx-auto ">
+    <ul id="list">
+      
+    </ul>  
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
